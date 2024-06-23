@@ -7,11 +7,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-.container{
-    width: 100%;
-}
 
-nav{
+
+.nav-bar nav{
     display: flex;
     justify-content: space-around;
     background-color: rgb(16, 16, 73);
@@ -85,7 +83,6 @@ nav{
     display: block;
 }
 
-
 .dropdown-items .dropdown-items.linux-dropdown{
     top: 0;
     left: 100%;
@@ -93,10 +90,217 @@ nav{
 
 }
 
-
-
 .logo-img img{
     width: 70px;
     height: 50px;
     border-radius: 50%;
+}
+
+.container{
+    width: 100%;
+    background-color: rgb(218, 214, 214);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.grid-item{
+    background-color: white;
+    padding: 20px;
+
+}
+
+.box1{
+  padding: 15px;
+  background-color: #fff;
+  /**width: 38%;
+  height: 230px;**/
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  grid-column: 1 / 2;
+  width: 485px;
+}
+
+.box1 textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.box1 button{
+    padding: 10px 15px;
+    margin-left: 65%;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+i{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.hp{
+    width: 450px;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+.hawk{
+    width: 450px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+.comment{
+    color: rgb(0, 110, 255);
+    border: none;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.feed1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    width: 485px;
+}
+
+.feed2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    width: 485px;
+}
+.feed3{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 485px;
+}
+
+.suggestions{
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    width: 300px;
+}
+
+.suggestions h3{
+    color:  rgb(0, 110, 255);
+    margin-bottom: 10px;
+}
+.suggestions ul li{
+    list-style: none;
+}
+.suggestions ul li .add-button{
+    background-color: rgb(0, 110, 255);
+    border-radius: 15px;
+    padding: 5px 15px;
+    align-self: start;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.suggestion-item{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.suggestion-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions .see-more{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 800px;
+}
+
+.suggestions ul li {
+    margin-bottom: 20px;  
+}
+
+.suggestion-item .close-button{
+    position: absolute;
+    border: none;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.feed2 h4{
+    font-weight: 400;
+}
+
+.vecteezy{
+    color:blue;
+    font-weight: 400;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.post-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-header .post-info .post-title{
+    font-weight: bold;
+}
+
+.post-header .post-info .post-title, .post-sub{
+    padding-left: 20px;
+}
+
+.post-header .post-info .post-sub, .post-date{
+    opacity: 0.8;
+    font-size: 14px
+}
+
+.reaction{
+    margin-top: 20px;
+}
+
+.feed1, .feed2, .feed3{
+    position: relative;
+}
+
+.post-date{
+    position: absolute;
+    top: 25px;
+    right: 10px;
 }
