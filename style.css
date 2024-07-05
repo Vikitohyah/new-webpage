@@ -19,7 +19,7 @@ body{
     background-color: rgb(16, 16, 73);
     align-items: center;
     padding: 10px 5%;
-    
+    width: 100%;
 }
 
 .logo{
@@ -32,6 +32,8 @@ body{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -297,15 +299,13 @@ a{
 }
 
 /* Responsiveness */
-@media (max-width: 600px){
-    .center-box{
-        padding: 20px; /* Adjusts the padding for smaller screens */
-        margin: 30px 0px; /* Remove horizontal margin for smaller screens */
+@media (max-width: 800px){
+    .container{
+        grid-template-columns: 1fr;
     }
-}
+    .box1, .feed1, .feed2, .feed3, .suggestions{
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
 
-@media (min-width: 601px) and (max-width: 800px){
-    .center-box{
-        margin: 30px 50px; /* Adjust horizontal margin for medium screens */
-    }
 }
